@@ -1,322 +1,790 @@
 // !$*UTF8*$!
 {
-    archiveVersion = 1;
-    classes = {};
-    objectVersion = 46;
-    rootObject = __RootObject_;
-    objects = {
-        __RootObject_ = {
-            isa = PBXProject;
-            attributes = {LastUpgradeCheck = 9999;};
-            buildConfigurationList = ___RootConfs_;
-            compatibilityVersion = 'Xcode 3.2';
-            developmentRegion = English;
-            hasScannedForEncodings = 0;
-            knownRegions = (en);
-            mainGroup = ___RootGroup_;
-            productRefGroup = ____Products_;
-            projectDirPath = '';
-            projectRoot = '';
-            targets = (______Target_SwiftCSV, ______Target_SwiftCSVTests);
-        };
-        '__PBXFileRef_Package.swift' = {
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            path = 'Package.swift';
-            sourceTree = '<group>';
-        };
-        ___RootGroup_ = {
-            isa = PBXGroup;
-            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_,  Dependencies_, _______Tests_, ____Products_);
-            sourceTree = '<group>';
-        };
-        '__PBXFileRef_Sources/SwiftCSV/CSV.swift' = {
-            name = 'CSV.swift';
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            path = 'Sources/SwiftCSV/CSV.swift';
-            sourceTree = '<group>';
-        };
-        '__PBXFileRef_Sources/SwiftCSV/Description.swift' = {
-            name = 'Description.swift';
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            path = 'Sources/SwiftCSV/Description.swift';
-            sourceTree = '<group>';
-        };
-        '__PBXFileRef_Sources/SwiftCSV/Parser.swift' = {
-            name = 'Parser.swift';
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            path = 'Sources/SwiftCSV/Parser.swift';
-            sourceTree = '<group>';
-        };
-        '__PBXFileRef_Sources/SwiftCSV/ParserHelpers.swift' = {
-            name = 'ParserHelpers.swift';
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            path = 'Sources/SwiftCSV/ParserHelpers.swift';
-            sourceTree = '<group>';
-        };
-        '__PBXFileRef_Sources/SwiftCSV/String+Lines.swift' = {
-            name = 'String+Lines.swift';
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            path = 'Sources/SwiftCSV/String+Lines.swift';
-            sourceTree = '<group>';
-        };
-        _______Group_SwiftCSV = {
-            isa = PBXGroup;
-            name = 'SwiftCSV';
-            sourceTree = '<group>';
-            children = ('__PBXFileRef_Sources/SwiftCSV/CSV.swift', '__PBXFileRef_Sources/SwiftCSV/Description.swift', '__PBXFileRef_Sources/SwiftCSV/Parser.swift', '__PBXFileRef_Sources/SwiftCSV/ParserHelpers.swift', '__PBXFileRef_Sources/SwiftCSV/String+Lines.swift');
-        };
-        ______Target_SwiftCSV = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = _______Confs_SwiftCSV;
-            buildPhases = (
-CompilePhase_SwiftCSV, ___LinkPhase_SwiftCSV);
-            buildRules = ();
-            dependencies = ();
-            name = 'SwiftCSV';
-            productName = SwiftCSV;
-            productReference = _____Product_SwiftCSV;
-            productType = 'com.apple.product-type.framework';
-        };
-        _____Product_SwiftCSV = {
-            isa = PBXFileReference;
-            explicitFileType = 'wrapper.framework';
-            path = 'SwiftCSV.framework';
-            sourceTree = BUILT_PRODUCTS_DIR;
-        };
-        CompilePhase_SwiftCSV = {
-            isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Sources/SwiftCSV/CSV.swift', '__src_cc_ref_Sources/SwiftCSV/Description.swift', '__src_cc_ref_Sources/SwiftCSV/Parser.swift', '__src_cc_ref_Sources/SwiftCSV/ParserHelpers.swift', '__src_cc_ref_Sources/SwiftCSV/String+Lines.swift');
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        '__src_cc_ref_Sources/SwiftCSV/CSV.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Sources/SwiftCSV/CSV.swift';
-        };
-        '__src_cc_ref_Sources/SwiftCSV/Description.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Sources/SwiftCSV/Description.swift';
-        };
-        '__src_cc_ref_Sources/SwiftCSV/Parser.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Sources/SwiftCSV/Parser.swift';
-        };
-        '__src_cc_ref_Sources/SwiftCSV/ParserHelpers.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Sources/SwiftCSV/ParserHelpers.swift';
-        };
-        '__src_cc_ref_Sources/SwiftCSV/String+Lines.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Sources/SwiftCSV/String+Lines.swift';
-        };
-        ___LinkPhase_SwiftCSV = {
-            isa = PBXFrameworksBuildPhase;
-            files = ();
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        _______Confs_SwiftCSV = {
-            isa = XCConfigurationList;
-            buildConfigurations = (___DebugConf_SwiftCSV, _ReleaseConf_SwiftCSV);
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Debug;
-        };
-        ___DebugConf_SwiftCSV = {
-            isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "SwiftCSV.xcodeproj/SwiftCSV_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"" ;  LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  PRODUCT_BUNDLE_IDENTIFIER = "SwiftCSV" ;  PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)" ;  PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
-            name = Debug;
-        };
-        _ReleaseConf_SwiftCSV = {
-            isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "SwiftCSV.xcodeproj/SwiftCSV_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"" ;  LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  PRODUCT_BUNDLE_IDENTIFIER = "SwiftCSV" ;  PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)" ;  PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
-            name = Release;
-        };
-        __Dependency_SwiftCSV = {
-            isa = PBXTargetDependency;
-            target = ______Target_SwiftCSV;
-        };
-        '__PBXFileRef_Tests/SwiftCSVTests/CSVTests.swift' = {
-            name = 'CSVTests.swift';
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            path = 'Tests/SwiftCSVTests/CSVTests.swift';
-            sourceTree = '<group>';
-        };
-        '__PBXFileRef_Tests/SwiftCSVTests/PerformanceTest.swift' = {
-            name = 'PerformanceTest.swift';
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            path = 'Tests/SwiftCSVTests/PerformanceTest.swift';
-            sourceTree = '<group>';
-        };
-        '__PBXFileRef_Tests/SwiftCSVTests/QuotedTests.swift' = {
-            name = 'QuotedTests.swift';
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            path = 'Tests/SwiftCSVTests/QuotedTests.swift';
-            sourceTree = '<group>';
-        };
-        '__PBXFileRef_Tests/SwiftCSVTests/TSVTests.swift' = {
-            name = 'TSVTests.swift';
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            path = 'Tests/SwiftCSVTests/TSVTests.swift';
-            sourceTree = '<group>';
-        };
-        '__PBXFileRef_Tests/SwiftCSVTests/URLTests.swift' = {
-            name = 'URLTests.swift';
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            path = 'Tests/SwiftCSVTests/URLTests.swift';
-            sourceTree = '<group>';
-        };
-        _______Group_SwiftCSVTests = {
-            isa = PBXGroup;
-            name = 'SwiftCSVTests';
-            sourceTree = '<group>';
-            children = ('__PBXFileRef_Tests/SwiftCSVTests/CSVTests.swift', '__PBXFileRef_Tests/SwiftCSVTests/PerformanceTest.swift', '__PBXFileRef_Tests/SwiftCSVTests/QuotedTests.swift', '__PBXFileRef_Tests/SwiftCSVTests/TSVTests.swift', '__PBXFileRef_Tests/SwiftCSVTests/URLTests.swift');
-        };
-        ______Target_SwiftCSVTests = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = _______Confs_SwiftCSVTests;
-            buildPhases = (
-CompilePhase_SwiftCSVTests, ___LinkPhase_SwiftCSVTests);
-            buildRules = ();
-            dependencies = (__Dependency_SwiftCSV);
-            name = 'SwiftCSVTests';
-            productName = SwiftCSVTests;
-            productReference = _____Product_SwiftCSVTests;
-            productType = 'com.apple.product-type.bundle.unit-test';
-        };
-        _____Product_SwiftCSVTests = {
-            isa = PBXFileReference;
-            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
-            path = 'SwiftCSVTests.xctest';
-            sourceTree = BUILT_PRODUCTS_DIR;
-        };
-        CompilePhase_SwiftCSVTests = {
-            isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Tests/SwiftCSVTests/CSVTests.swift', '__src_cc_ref_Tests/SwiftCSVTests/PerformanceTest.swift', '__src_cc_ref_Tests/SwiftCSVTests/QuotedTests.swift', '__src_cc_ref_Tests/SwiftCSVTests/TSVTests.swift', '__src_cc_ref_Tests/SwiftCSVTests/URLTests.swift');
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        '__src_cc_ref_Tests/SwiftCSVTests/CSVTests.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Tests/SwiftCSVTests/CSVTests.swift';
-        };
-        '__src_cc_ref_Tests/SwiftCSVTests/PerformanceTest.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Tests/SwiftCSVTests/PerformanceTest.swift';
-        };
-        '__src_cc_ref_Tests/SwiftCSVTests/QuotedTests.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Tests/SwiftCSVTests/QuotedTests.swift';
-        };
-        '__src_cc_ref_Tests/SwiftCSVTests/TSVTests.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Tests/SwiftCSVTests/TSVTests.swift';
-        };
-        '__src_cc_ref_Tests/SwiftCSVTests/URLTests.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Tests/SwiftCSVTests/URLTests.swift';
-        };
-        ___LinkPhase_SwiftCSVTests = {
-            isa = PBXFrameworksBuildPhase;
-            files = (_LinkFileRef_SwiftCSV_via_SwiftCSVTests);
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        _LinkFileRef_SwiftCSV_via_SwiftCSVTests = {
-            isa = PBXBuildFile;
-            fileRef = _____Product_SwiftCSV;
-        };
-        _______Confs_SwiftCSVTests = {
-            isa = XCConfigurationList;
-            buildConfigurations = (___DebugConf_SwiftCSVTests, _ReleaseConf_SwiftCSVTests);
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Debug;
-        };
-        ___DebugConf_SwiftCSVTests = {
-            isa = XCBuildConfiguration;
-            buildSettings = { EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "SwiftCSV.xcodeproj/SwiftCSVTests_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks" ;  LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
-            name = Debug;
-        };
-        _ReleaseConf_SwiftCSVTests = {
-            isa = XCBuildConfiguration;
-            buildSettings = { EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES" ;  FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks" ;  INFOPLIST_FILE = "SwiftCSV.xcodeproj/SwiftCSVTests_Info.plist" ;  LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks" ;  LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"" ;  OTHER_LDFLAGS = "\"$(inherited)\"" ;  OTHER_SWIFT_FLAGS = "\"$(inherited)\"" ;  SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE" ;  SWIFT_VERSION = "3.0" ; };
-            name = Release;
-        };
-        __Dependency_SwiftCSVTests = {
-            isa = PBXTargetDependency;
-            target = ______Target_SwiftCSVTests;
-        };
-        '__PBXFileRef_SwiftCSV.xcodeproj/Configs/Project.xcconfig' = {
-            isa = PBXFileReference;
-            lastKnownFileType = text.xcconfig;
-            path = 'SwiftCSV.xcodeproj/Configs/Project.xcconfig';
-            sourceTree = '<group>';
-        };
-        '__PBXFileRef_SwiftCSV.xcodeproj/Configs/Debug.xcconfig' = {
-            isa = PBXFileReference;
-            lastKnownFileType = text.xcconfig;
-            path = 'SwiftCSV.xcodeproj/Configs/Debug.xcconfig';
-            sourceTree = '<group>';
-        };
-        '__PBXFileRef_SwiftCSV.xcodeproj/Configs/Release.xcconfig' = {
-            isa = PBXFileReference;
-            lastKnownFileType = text.xcconfig;
-            path = 'SwiftCSV.xcodeproj/Configs/Release.xcconfig';
-            sourceTree = '<group>';
-        };
-        _____Configs_ = {
-            isa = PBXGroup;
-            children = ('__PBXFileRef_SwiftCSV.xcodeproj/Configs/Project.xcconfig', '__PBXFileRef_SwiftCSV.xcodeproj/Configs/Debug.xcconfig', '__PBXFileRef_SwiftCSV.xcodeproj/Configs/Release.xcconfig');
-            name = Configs;
-            sourceTree = '<group>';
-        };
-        _____Sources_ = {
-            isa = PBXGroup;
-            children = (_______Group_SwiftCSV);
-            name = Sources;
-            sourceTree = '<group>';
-        };
-        _______Tests_ = {
-            isa = PBXGroup;
-            children = (_______Group_SwiftCSVTests);
-            name = Tests;
-            sourceTree = '<group>';
-        };
-       TestProducts_ = {
-            isa = PBXGroup;
-            children = (_____Product_SwiftCSVTests);
-            name = Tests;
-            sourceTree = '<group>';
-        };
-        ____Products_ = {
-            isa = PBXGroup;
-            children = (TestProducts_, _____Product_SwiftCSV);
-            name = Products;
-            sourceTree = '<group>';
-        };
-        _______Debug_ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = '__PBXFileRef_SwiftCSV.xcodeproj/Configs/Debug.xcconfig';
-            buildSettings = {};
-            name = Debug;
-        };
-        _____Release_ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = '__PBXFileRef_SwiftCSV.xcodeproj/Configs/Release.xcconfig';
-            buildSettings = {};
-            name = Release;
-        };
-        ___RootConfs_ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (_______Debug_, _____Release_);
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Debug;
-        };
-    };
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E06938AB1D8F8C48008441D8 /* empty_fields.csv in CopyFiles */ = {isa = PBXBuildFile; fileRef = E06938A71D8F8C39008441D8 /* empty_fields.csv */; };
+		E06938AC1D8F8C4A008441D8 /* large.csv in CopyFiles */ = {isa = PBXBuildFile; fileRef = E06938A81D8F8C39008441D8 /* large.csv */; };
+		E06938AD1D8F8C4C008441D8 /* quotes.csv in CopyFiles */ = {isa = PBXBuildFile; fileRef = E06938A91D8F8C39008441D8 /* quotes.csv */; };
+		_LinkFileRef_PerfectCURL_via_SwiftCSV /* PerfectCURL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectCURL" /* PerfectCURL.framework */; };
+		_LinkFileRef_PerfectCURL_via_SwiftCSVTests /* PerfectCURL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectCURL" /* PerfectCURL.framework */; };
+		_LinkFileRef_PerfectLib_via_SwiftCSV /* PerfectLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectLib" /* PerfectLib.framework */; };
+		_LinkFileRef_PerfectLib_via_SwiftCSVTests /* PerfectLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectLib" /* PerfectLib.framework */; };
+		_LinkFileRef_PerfectThread_via_PerfectCURL /* PerfectThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectThread" /* PerfectThread.framework */; };
+		_LinkFileRef_PerfectThread_via_SwiftCSV /* PerfectThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectThread" /* PerfectThread.framework */; };
+		_LinkFileRef_PerfectThread_via_SwiftCSVTests /* PerfectThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectThread" /* PerfectThread.framework */; };
+		_LinkFileRef_SwiftCSV_via_SwiftCSVTests /* SwiftCSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SwiftCSV" /* SwiftCSV.framework */; };
+		"__src_cc_ref_Packages/PerfectCURL-2.0.0/Sources/cURL.swift" /* cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectCURL-2.0.0/Sources/cURL.swift" /* cURL.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Bytes.swift" /* Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Bytes.swift" /* Bytes.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Dir.swift" /* Dir.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Dir.swift" /* Dir.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/File.swift" /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/File.swift" /* File.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/JSONConvertible.swift" /* JSONConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/JSONConvertible.swift" /* JSONConvertible.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Log.swift" /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Log.swift" /* Log.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectError.swift" /* PerfectError.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectError.swift" /* PerfectError.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectServer.swift" /* PerfectServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectServer.swift" /* PerfectServer.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SwiftCompatibility.swift" /* SwiftCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SwiftCompatibility.swift" /* SwiftCompatibility.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SysProcess.swift" /* SysProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SysProcess.swift" /* SysProcess.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Utilities.swift" /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Utilities.swift" /* Utilities.swift */; };
+		"__src_cc_ref_Packages/PerfectThread-2.0.0/Sources/ThreadQueue.swift" /* ThreadQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectThread-2.0.0/Sources/ThreadQueue.swift" /* ThreadQueue.swift */; };
+		"__src_cc_ref_Packages/PerfectThread-2.0.0/Sources/Threading.swift" /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectThread-2.0.0/Sources/Threading.swift" /* Threading.swift */; };
+		__src_cc_ref_Sources/SwiftCSV/CSV.swift /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/SwiftCSV/CSV.swift /* CSV.swift */; };
+		__src_cc_ref_Sources/SwiftCSV/Description.swift /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/SwiftCSV/Description.swift /* Description.swift */; };
+		__src_cc_ref_Sources/SwiftCSV/Parser.swift /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/SwiftCSV/Parser.swift /* Parser.swift */; };
+		__src_cc_ref_Sources/SwiftCSV/ParserHelpers.swift /* ParserHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/SwiftCSV/ParserHelpers.swift /* ParserHelpers.swift */; };
+		"__src_cc_ref_Sources/SwiftCSV/String+Lines.swift" /* String+Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Sources/SwiftCSV/String+Lines.swift" /* String+Lines.swift */; };
+		__src_cc_ref_Tests/SwiftCSVTests/CSVTests.swift /* CSVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/SwiftCSVTests/CSVTests.swift /* CSVTests.swift */; };
+		__src_cc_ref_Tests/SwiftCSVTests/PerformanceTest.swift /* PerformanceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/SwiftCSVTests/PerformanceTest.swift /* PerformanceTest.swift */; };
+		__src_cc_ref_Tests/SwiftCSVTests/QuotedTests.swift /* QuotedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/SwiftCSVTests/QuotedTests.swift /* QuotedTests.swift */; };
+		__src_cc_ref_Tests/SwiftCSVTests/TSVTests.swift /* TSVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/SwiftCSVTests/TSVTests.swift /* TSVTests.swift */; };
+		__src_cc_ref_Tests/SwiftCSVTests/URLTests.swift /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/SwiftCSVTests/URLTests.swift /* URLTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E06938A31D8F8AA5008441D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_PerfectThread";
+			remoteInfo = PerfectThread;
+		};
+		E06938A41D8F8AA5008441D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_PerfectLib";
+			remoteInfo = PerfectLib;
+		};
+		E06938A51D8F8AA5008441D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_PerfectCURL";
+			remoteInfo = PerfectCURL;
+		};
+		E06938A61D8F8AA5008441D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_SwiftCSV";
+			remoteInfo = SwiftCSV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E06938AA1D8F8C46008441D8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				E06938AB1D8F8C48008441D8 /* empty_fields.csv in CopyFiles */,
+				E06938AC1D8F8C4A008441D8 /* large.csv in CopyFiles */,
+				E06938AD1D8F8C4C008441D8 /* quotes.csv in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E06938A71D8F8C39008441D8 /* empty_fields.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = empty_fields.csv; path = Tests/SwiftCSVTests/empty_fields.csv; sourceTree = "<group>"; };
+		E06938A81D8F8C39008441D8 /* large.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = large.csv; path = Tests/SwiftCSVTests/large.csv; sourceTree = "<group>"; };
+		E06938A91D8F8C39008441D8 /* quotes.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = quotes.csv; path = Tests/SwiftCSVTests/quotes.csv; sourceTree = "<group>"; };
+		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectCURL-2.0.0/Sources/cURL.swift" /* cURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = cURL.swift; path = "Packages/PerfectCURL-2.0.0/Sources/cURL.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Bytes.swift" /* Bytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Bytes.swift; path = "Packages/PerfectLib-2.0.0/Sources/PerfectLib/Bytes.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Dir.swift" /* Dir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dir.swift; path = "Packages/PerfectLib-2.0.0/Sources/PerfectLib/Dir.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/File.swift" /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = File.swift; path = "Packages/PerfectLib-2.0.0/Sources/PerfectLib/File.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/JSONConvertible.swift" /* JSONConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JSONConvertible.swift; path = "Packages/PerfectLib-2.0.0/Sources/PerfectLib/JSONConvertible.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Log.swift" /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Log.swift; path = "Packages/PerfectLib-2.0.0/Sources/PerfectLib/Log.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectError.swift" /* PerfectError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PerfectError.swift; path = "Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectError.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectServer.swift" /* PerfectServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PerfectServer.swift; path = "Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectServer.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SwiftCompatibility.swift" /* SwiftCompatibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftCompatibility.swift; path = "Packages/PerfectLib-2.0.0/Sources/PerfectLib/SwiftCompatibility.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SysProcess.swift" /* SysProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SysProcess.swift; path = "Packages/PerfectLib-2.0.0/Sources/PerfectLib/SysProcess.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Utilities.swift" /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "Packages/PerfectLib-2.0.0/Sources/PerfectLib/Utilities.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectThread-2.0.0/Sources/ThreadQueue.swift" /* ThreadQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThreadQueue.swift; path = "Packages/PerfectThread-2.0.0/Sources/ThreadQueue.swift"; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectThread-2.0.0/Sources/Threading.swift" /* Threading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Threading.swift; path = "Packages/PerfectThread-2.0.0/Sources/Threading.swift"; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/SwiftCSV/CSV.swift /* CSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CSV.swift; path = Sources/SwiftCSV/CSV.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/SwiftCSV/Description.swift /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Description.swift; path = Sources/SwiftCSV/Description.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/SwiftCSV/Parser.swift /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/SwiftCSV/Parser.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/SwiftCSV/ParserHelpers.swift /* ParserHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ParserHelpers.swift; path = Sources/SwiftCSV/ParserHelpers.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Sources/SwiftCSV/String+Lines.swift" /* String+Lines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+Lines.swift"; path = "Sources/SwiftCSV/String+Lines.swift"; sourceTree = "<group>"; };
+		__PBXFileRef_SwiftCSV.xcodeproj/Configs/Debug.xcconfig /* SwiftCSV.xcodeproj/Configs/Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SwiftCSV.xcodeproj/Configs/Debug.xcconfig; sourceTree = "<group>"; };
+		__PBXFileRef_SwiftCSV.xcodeproj/Configs/Project.xcconfig /* SwiftCSV.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SwiftCSV.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
+		__PBXFileRef_SwiftCSV.xcodeproj/Configs/Release.xcconfig /* SwiftCSV.xcodeproj/Configs/Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SwiftCSV.xcodeproj/Configs/Release.xcconfig; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/SwiftCSVTests/CSVTests.swift /* CSVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CSVTests.swift; path = Tests/SwiftCSVTests/CSVTests.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/SwiftCSVTests/PerformanceTest.swift /* PerformanceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PerformanceTest.swift; path = Tests/SwiftCSVTests/PerformanceTest.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/SwiftCSVTests/QuotedTests.swift /* QuotedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuotedTests.swift; path = Tests/SwiftCSVTests/QuotedTests.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/SwiftCSVTests/TSVTests.swift /* TSVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TSVTests.swift; path = Tests/SwiftCSVTests/TSVTests.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/SwiftCSVTests/URLTests.swift /* URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = URLTests.swift; path = Tests/SwiftCSVTests/URLTests.swift; sourceTree = "<group>"; };
+		"_____Product_PerfectCURL" /* PerfectCURL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectCURL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_PerfectLib" /* PerfectLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_PerfectThread" /* PerfectThread.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectThread.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SwiftCSV" /* SwiftCSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftCSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SwiftCSVTests" /* SwiftCSVTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftCSVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		"___LinkPhase_PerfectCURL" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_PerfectThread_via_PerfectCURL /* PerfectThread.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_PerfectLib" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_PerfectThread" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SwiftCSV" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_PerfectLib_via_SwiftCSV /* PerfectLib.framework in Frameworks */,
+				_LinkFileRef_PerfectThread_via_SwiftCSV /* PerfectThread.framework in Frameworks */,
+				_LinkFileRef_PerfectCURL_via_SwiftCSV /* PerfectCURL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SwiftCSVTests" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_PerfectLib_via_SwiftCSVTests /* PerfectLib.framework in Frameworks */,
+				_LinkFileRef_PerfectThread_via_SwiftCSVTests /* PerfectThread.framework in Frameworks */,
+				_LinkFileRef_PerfectCURL_via_SwiftCSVTests /* PerfectCURL.framework in Frameworks */,
+				_LinkFileRef_SwiftCSV_via_SwiftCSVTests /* SwiftCSV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		Dependencies_ /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_PerfectLib" /* PerfectLib */,
+				"_______Group_PerfectCURL" /* PerfectCURL */,
+				"_______Group_PerfectThread" /* PerfectThread */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		TestProducts_ /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_____Product_SwiftCSVTests" /* SwiftCSVTests.xctest */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		"___RootGroup_" = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Package.swift /* Package.swift */,
+				"_____Configs_" /* Configs */,
+				"_____Sources_" /* Sources */,
+				Dependencies_ /* Dependencies */,
+				"_______Tests_" /* Tests */,
+				"____Products_" /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		"____Products_" /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				TestProducts_ /* Tests */,
+				"_____Product_PerfectLib" /* PerfectLib.framework */,
+				"_____Product_PerfectThread" /* PerfectThread.framework */,
+				"_____Product_PerfectCURL" /* PerfectCURL.framework */,
+				"_____Product_SwiftCSV" /* SwiftCSV.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		"_____Configs_" /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_SwiftCSV.xcodeproj/Configs/Project.xcconfig /* SwiftCSV.xcodeproj/Configs/Project.xcconfig */,
+				__PBXFileRef_SwiftCSV.xcodeproj/Configs/Debug.xcconfig /* SwiftCSV.xcodeproj/Configs/Debug.xcconfig */,
+				__PBXFileRef_SwiftCSV.xcodeproj/Configs/Release.xcconfig /* SwiftCSV.xcodeproj/Configs/Release.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		"_____Sources_" /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_SwiftCSV" /* SwiftCSV */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_PerfectCURL" /* PerfectCURL */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/PerfectCURL-2.0.0/Sources/cURL.swift" /* cURL.swift */,
+			);
+			name = PerfectCURL;
+			sourceTree = "<group>";
+		};
+		"_______Group_PerfectLib" /* PerfectLib */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Bytes.swift" /* Bytes.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Dir.swift" /* Dir.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/File.swift" /* File.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/JSONConvertible.swift" /* JSONConvertible.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Log.swift" /* Log.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectError.swift" /* PerfectError.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectServer.swift" /* PerfectServer.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SwiftCompatibility.swift" /* SwiftCompatibility.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SysProcess.swift" /* SysProcess.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Utilities.swift" /* Utilities.swift */,
+			);
+			name = PerfectLib;
+			sourceTree = "<group>";
+		};
+		"_______Group_PerfectThread" /* PerfectThread */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/PerfectThread-2.0.0/Sources/Threading.swift" /* Threading.swift */,
+				"__PBXFileRef_Packages/PerfectThread-2.0.0/Sources/ThreadQueue.swift" /* ThreadQueue.swift */,
+			);
+			name = PerfectThread;
+			sourceTree = "<group>";
+		};
+		"_______Group_SwiftCSV" /* SwiftCSV */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Sources/SwiftCSV/CSV.swift /* CSV.swift */,
+				__PBXFileRef_Sources/SwiftCSV/Description.swift /* Description.swift */,
+				__PBXFileRef_Sources/SwiftCSV/Parser.swift /* Parser.swift */,
+				__PBXFileRef_Sources/SwiftCSV/ParserHelpers.swift /* ParserHelpers.swift */,
+				"__PBXFileRef_Sources/SwiftCSV/String+Lines.swift" /* String+Lines.swift */,
+			);
+			name = SwiftCSV;
+			sourceTree = "<group>";
+		};
+		"_______Group_SwiftCSVTests" /* SwiftCSVTests */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Tests/SwiftCSVTests/CSVTests.swift /* CSVTests.swift */,
+				__PBXFileRef_Tests/SwiftCSVTests/PerformanceTest.swift /* PerformanceTest.swift */,
+				__PBXFileRef_Tests/SwiftCSVTests/QuotedTests.swift /* QuotedTests.swift */,
+				__PBXFileRef_Tests/SwiftCSVTests/TSVTests.swift /* TSVTests.swift */,
+				__PBXFileRef_Tests/SwiftCSVTests/URLTests.swift /* URLTests.swift */,
+				E06938A71D8F8C39008441D8 /* empty_fields.csv */,
+				E06938A81D8F8C39008441D8 /* large.csv */,
+				E06938A91D8F8C39008441D8 /* quotes.csv */,
+			);
+			name = SwiftCSVTests;
+			sourceTree = "<group>";
+		};
+		"_______Tests_" /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_SwiftCSVTests" /* SwiftCSVTests */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"______Target_PerfectCURL" /* PerfectCURL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_PerfectCURL" /* Build configuration list for PBXNativeTarget "PerfectCURL" */;
+			buildPhases = (
+				CompilePhase_PerfectCURL /* Sources */,
+				"___LinkPhase_PerfectCURL" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_PerfectThread /* PBXTargetDependency */,
+			);
+			name = PerfectCURL;
+			productName = PerfectCURL;
+			productReference = "_____Product_PerfectCURL" /* PerfectCURL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_PerfectLib" /* PerfectLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_PerfectLib" /* Build configuration list for PBXNativeTarget "PerfectLib" */;
+			buildPhases = (
+				CompilePhase_PerfectLib /* Sources */,
+				"___LinkPhase_PerfectLib" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PerfectLib;
+			productName = PerfectLib;
+			productReference = "_____Product_PerfectLib" /* PerfectLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_PerfectThread" /* PerfectThread */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_PerfectThread" /* Build configuration list for PBXNativeTarget "PerfectThread" */;
+			buildPhases = (
+				CompilePhase_PerfectThread /* Sources */,
+				"___LinkPhase_PerfectThread" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PerfectThread;
+			productName = PerfectThread;
+			productReference = "_____Product_PerfectThread" /* PerfectThread.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_SwiftCSV" /* SwiftCSV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SwiftCSV" /* Build configuration list for PBXNativeTarget "SwiftCSV" */;
+			buildPhases = (
+				CompilePhase_SwiftCSV /* Sources */,
+				"___LinkPhase_SwiftCSV" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_PerfectLib /* PBXTargetDependency */,
+				__Dependency_PerfectThread /* PBXTargetDependency */,
+				__Dependency_PerfectCURL /* PBXTargetDependency */,
+			);
+			name = SwiftCSV;
+			productName = SwiftCSV;
+			productReference = "_____Product_SwiftCSV" /* SwiftCSV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_SwiftCSVTests" /* SwiftCSVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SwiftCSVTests" /* Build configuration list for PBXNativeTarget "SwiftCSVTests" */;
+			buildPhases = (
+				CompilePhase_SwiftCSVTests /* Sources */,
+				"___LinkPhase_SwiftCSVTests" /* Frameworks */,
+				E06938AA1D8F8C46008441D8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_PerfectLib /* PBXTargetDependency */,
+				__Dependency_PerfectThread /* PBXTargetDependency */,
+				__Dependency_PerfectCURL /* PBXTargetDependency */,
+				__Dependency_SwiftCSV /* PBXTargetDependency */,
+			);
+			name = SwiftCSVTests;
+			productName = SwiftCSVTests;
+			productReference = "_____Product_SwiftCSVTests" /* SwiftCSVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		__RootObject_ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "SwiftCSV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = "___RootGroup_";
+			productRefGroup = "____Products_" /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"______Target_PerfectLib" /* PerfectLib */,
+				"______Target_PerfectThread" /* PerfectThread */,
+				"______Target_PerfectCURL" /* PerfectCURL */,
+				"______Target_SwiftCSV" /* SwiftCSV */,
+				"______Target_SwiftCSVTests" /* SwiftCSVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CompilePhase_PerfectCURL /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/PerfectCURL-2.0.0/Sources/cURL.swift" /* cURL.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_PerfectLib /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Bytes.swift" /* Bytes.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Dir.swift" /* Dir.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/File.swift" /* File.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/JSONConvertible.swift" /* JSONConvertible.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Log.swift" /* Log.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectError.swift" /* PerfectError.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectServer.swift" /* PerfectServer.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SwiftCompatibility.swift" /* SwiftCompatibility.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SysProcess.swift" /* SysProcess.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Utilities.swift" /* Utilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_PerfectThread /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/PerfectThread-2.0.0/Sources/Threading.swift" /* Threading.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectThread-2.0.0/Sources/ThreadQueue.swift" /* ThreadQueue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SwiftCSV /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				__src_cc_ref_Sources/SwiftCSV/CSV.swift /* CSV.swift in Sources */,
+				__src_cc_ref_Sources/SwiftCSV/Description.swift /* Description.swift in Sources */,
+				__src_cc_ref_Sources/SwiftCSV/Parser.swift /* Parser.swift in Sources */,
+				__src_cc_ref_Sources/SwiftCSV/ParserHelpers.swift /* ParserHelpers.swift in Sources */,
+				"__src_cc_ref_Sources/SwiftCSV/String+Lines.swift" /* String+Lines.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SwiftCSVTests /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				__src_cc_ref_Tests/SwiftCSVTests/CSVTests.swift /* CSVTests.swift in Sources */,
+				__src_cc_ref_Tests/SwiftCSVTests/PerformanceTest.swift /* PerformanceTest.swift in Sources */,
+				__src_cc_ref_Tests/SwiftCSVTests/QuotedTests.swift /* QuotedTests.swift in Sources */,
+				__src_cc_ref_Tests/SwiftCSVTests/TSVTests.swift /* TSVTests.swift in Sources */,
+				__src_cc_ref_Tests/SwiftCSVTests/URLTests.swift /* URLTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		__Dependency_PerfectCURL /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_PerfectCURL" /* PerfectCURL */;
+			targetProxy = E06938A51D8F8AA5008441D8 /* PBXContainerItemProxy */;
+		};
+		__Dependency_PerfectLib /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_PerfectLib" /* PerfectLib */;
+			targetProxy = E06938A41D8F8AA5008441D8 /* PBXContainerItemProxy */;
+		};
+		__Dependency_PerfectThread /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_PerfectThread" /* PerfectThread */;
+			targetProxy = E06938A31D8F8AA5008441D8 /* PBXContainerItemProxy */;
+		};
+		__Dependency_SwiftCSV /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_SwiftCSV" /* SwiftCSV */;
+			targetProxy = E06938A61D8F8AA5008441D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		_ReleaseConf_PerfectCURL /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "\"/Users/jonathanguthrie/Documents/development/iamjono/SwiftCSV/Packages/cURL-2.0.0\"";
+				INFOPLIST_FILE = SwiftCSV.xcodeproj/PerfectCURL_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"";
+				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"";
+				OTHER_LDFLAGS = (
+					"\"$(inherited)\"",
+					"\"-L/usr/lib\"",
+					"\"-lcurl\"",
+				);
+				OTHER_SWIFT_FLAGS = "\"$(inherited)\" \"-I/usr/include\"";
+				PRODUCT_BUNDLE_IDENTIFIER = PerfectCURL;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_PerfectLib /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = SwiftCSV.xcodeproj/PerfectLib_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"";
+				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"";
+				OTHER_LDFLAGS = "\"$(inherited)\"";
+				OTHER_SWIFT_FLAGS = "\"$(inherited)\"";
+				PRODUCT_BUNDLE_IDENTIFIER = PerfectLib;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_PerfectThread /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = SwiftCSV.xcodeproj/PerfectThread_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"";
+				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"";
+				OTHER_LDFLAGS = "\"$(inherited)\"";
+				OTHER_SWIFT_FLAGS = "\"$(inherited)\"";
+				PRODUCT_BUNDLE_IDENTIFIER = PerfectThread;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SwiftCSV /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "\"/Users/jonathanguthrie/Documents/development/iamjono/SwiftCSV/Packages/cURL-2.0.0\"";
+				INFOPLIST_FILE = SwiftCSV.xcodeproj/SwiftCSV_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"";
+				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"";
+				OTHER_LDFLAGS = (
+					"\"$(inherited)\"",
+					"\"-L/usr/lib\"",
+					"\"-lcurl\"",
+				);
+				OTHER_SWIFT_FLAGS = "\"$(inherited)\" \"-I/usr/include\"";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftCSV;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_SwiftCSVTests /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "\"/Users/jonathanguthrie/Documents/development/iamjono/SwiftCSV/Packages/cURL-2.0.0\"";
+				INFOPLIST_FILE = SwiftCSV.xcodeproj/SwiftCSVTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"";
+				OTHER_LDFLAGS = (
+					"\"$(inherited)\"",
+					"\"-L/usr/lib\"",
+					"\"-lcurl\"",
+				);
+				OTHER_SWIFT_FLAGS = "\"$(inherited)\" \"-I/usr/include\"";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		"___DebugConf_PerfectCURL" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "\"/Users/jonathanguthrie/Documents/development/iamjono/SwiftCSV/Packages/cURL-2.0.0\"";
+				INFOPLIST_FILE = SwiftCSV.xcodeproj/PerfectCURL_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"";
+				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"";
+				OTHER_LDFLAGS = (
+					"\"$(inherited)\"",
+					"\"-L/usr/lib\"",
+					"\"-lcurl\"",
+				);
+				OTHER_SWIFT_FLAGS = "\"$(inherited)\" \"-I/usr/include\"";
+				PRODUCT_BUNDLE_IDENTIFIER = PerfectCURL;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_PerfectLib" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = SwiftCSV.xcodeproj/PerfectLib_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"";
+				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"";
+				OTHER_LDFLAGS = "\"$(inherited)\"";
+				OTHER_SWIFT_FLAGS = "\"$(inherited)\"";
+				PRODUCT_BUNDLE_IDENTIFIER = PerfectLib;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_PerfectThread" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = SwiftCSV.xcodeproj/PerfectThread_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"";
+				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"";
+				OTHER_LDFLAGS = "\"$(inherited)\"";
+				OTHER_SWIFT_FLAGS = "\"$(inherited)\"";
+				PRODUCT_BUNDLE_IDENTIFIER = PerfectThread;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_SwiftCSV" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "\"/Users/jonathanguthrie/Documents/development/iamjono/SwiftCSV/Packages/cURL-2.0.0\"";
+				INFOPLIST_FILE = SwiftCSV.xcodeproj/SwiftCSV_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "\"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx\"";
+				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"";
+				OTHER_LDFLAGS = (
+					"\"$(inherited)\"",
+					"\"-L/usr/lib\"",
+					"\"-lcurl\"",
+				);
+				OTHER_SWIFT_FLAGS = "\"$(inherited)\" \"-I/usr/include\"";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftCSV;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_SwiftCSVTests" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "\"/Users/jonathanguthrie/Documents/development/iamjono/SwiftCSV/Packages/cURL-2.0.0\"";
+				INFOPLIST_FILE = SwiftCSV.xcodeproj/SwiftCSVTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "\"$(PROJECT_TEMP_DIR)/SymlinkLibs/\"";
+				OTHER_LDFLAGS = (
+					"\"$(inherited)\"",
+					"\"-L/usr/lib\"",
+					"\"-lcurl\"",
+				);
+				OTHER_SWIFT_FLAGS = "\"$(inherited)\" \"-I/usr/include\"";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"_____Release_" /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_SwiftCSV.xcodeproj/Configs/Release.xcconfig /* SwiftCSV.xcodeproj/Configs/Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		"_______Debug_" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_SwiftCSV.xcodeproj/Configs/Debug.xcconfig /* SwiftCSV.xcodeproj/Configs/Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		"___RootConfs_" /* Build configuration list for PBXProject "SwiftCSV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"_______Debug_" /* Debug */,
+				"_____Release_" /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_PerfectCURL" /* Build configuration list for PBXNativeTarget "PerfectCURL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_PerfectCURL" /* Debug */,
+				_ReleaseConf_PerfectCURL /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_PerfectLib" /* Build configuration list for PBXNativeTarget "PerfectLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_PerfectLib" /* Debug */,
+				_ReleaseConf_PerfectLib /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_PerfectThread" /* Build configuration list for PBXNativeTarget "PerfectThread" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_PerfectThread" /* Debug */,
+				_ReleaseConf_PerfectThread /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SwiftCSV" /* Build configuration list for PBXNativeTarget "SwiftCSV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SwiftCSV" /* Debug */,
+				_ReleaseConf_SwiftCSV /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SwiftCSVTests" /* Build configuration list for PBXNativeTarget "SwiftCSVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SwiftCSVTests" /* Debug */,
+				_ReleaseConf_SwiftCSVTests /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = __RootObject_ /* Project object */;
 }

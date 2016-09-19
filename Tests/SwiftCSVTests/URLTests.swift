@@ -12,25 +12,41 @@ import SwiftCSV
 class URLTests: XCTestCase {
     var csv: CSV!
     
-    func testEmptyFields() {
-        let csvURL = NSBundle(forClass: CSVTests.self).URLForResource("empty_fields", withExtension: "csv")!
-        csv = try! CSV(url: csvURL)
-        let expected = [
-            ["id": "1", "name": "John", "age": "23"],
-            ["id": "2", "name": "James", "age": "32"],
-            ["id": "3", "name": "", "age": ""],
-            ["id": "6", "name": "", "age": ""],
-            ["id": "", "name": "", "age": ""],
-            ["id": "", "name": "Tom", "age": ""]
-        ]
-        for (index, row) in csv.rows.enumerate() {
-            XCTAssertEqual(expected[index], row)
-        }
-    }
-    
+	func testEmptyFieldsURL() {
+		let csvURL = "https://raw.githubusercontent.com/iamjono/SwiftCSV/master/Tests/SwiftCSVTests/empty_fields.csv"
+		csv = try! CSV(url: csvURL)
+		let expected = [
+			["id": "1", "name": "John", "age": "23"],
+			["id": "2", "name": "James", "age": "32"],
+			["id": "3", "name": "", "age": ""],
+			["id": "6", "name": "", "age": ""],
+			["id": "", "name": "", "age": ""],
+			["id": "", "name": "Tom", "age": ""]
+		]
+		for (index, row) in csv.rows.enumerated() {
+			XCTAssertEqual(expected[index], row)
+		}
+	}
+
+	func testEmptyFieldsFile() {
+		let csvFile = "Tests/SwiftCSVTests/empty_fields.csv" // NEEDS TO BE RUN IN TERMINAL
+		csv = try! CSV(fileName: csvFile)
+		let expected = [
+			["id": "1", "name": "John", "age": "23"],
+			["id": "2", "name": "James", "age": "32"],
+			["id": "3", "name": "", "age": ""],
+			["id": "6", "name": "", "age": ""],
+			["id": "", "name": "", "age": ""],
+			["id": "", "name": "Tom", "age": ""]
+		]
+		for (index, row) in csv.rows.enumerated() {
+			XCTAssertEqual(expected[index], row)
+		}
+	}
+
     func testQuotes() {
-        let csvURL = NSBundle(forClass: CSVTests.self).URLForResource("quotes", withExtension: "csv")!
-        csv = try! CSV(url: csvURL)
+		let csvFile = "Tests/SwiftCSVTests/quotes.csv" // NEEDS TO BE RUN IN TERMINAL
+		csv = try! CSV(fileName: csvFile)
         let expected = [
             ["id": "4", "name, first": "Alex", "name, last": "Smith"],
             ["id": "5", "name, first": "Joe", "name, last": "Bloggs"],
@@ -56,9 +72,9 @@ class URLTests: XCTestCase {
             ],
             [:]
         ]
-        for (index, row) in csv.rows.enumerate() {
+        for (index, row) in csv.rows.enumerated() {
             XCTAssertEqual(expected[index], row)
         }
     }
-    
+
 }
