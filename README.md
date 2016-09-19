@@ -1,7 +1,15 @@
 # SwiftCSV
-[![Version](http://img.shields.io/cocoapods/v/SwiftCSV.svg?style=flat)](http://cocoadocs.org/docsets/SwiftCSV)
 
-_Simple CSV parsing, for OSX and iOS._
+Simple CSV parsing for Swift 3
+
+## This Fork
+
+This fork is intended as a server side utility. 
+
+* It is Swift 3.0 and Swift Package Manager (SPM) ready.
+
+The original repo can be found here: [https://github.com/naoty/SwiftCSV](https://github.com/naoty/SwiftCSV). Thanks @ naoty for the excellent work!
+
 
 ## Usage
 
@@ -54,14 +62,24 @@ csv.enumerateAsDict { dict in
 
 ## Installation
 
-### CocoaPods
+###Requirements
 
-```ruby
-pod "SwiftCSV"
+- Swift version 3.0
+
+### Install via Swift Package Manager
+
+* Add the following to your `Package.swift` file:
+
+``` swift
+.Package(
+    url: "https://github.com/iamjono/SwiftCSV.git", 
+    majorVersion: 1, minor: 0
+    ),
 ```
 
-### Carthage
+Then, regenerate your Xcode project:
 
 ```
-github "naoty/SwiftCSV"
+swift package generate-xcodeproj
 ```
+
