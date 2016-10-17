@@ -15,7 +15,17 @@ class CSVTests: XCTestCase {
     override func setUp() {
         csv = CSV(string: "id,name,age\n1,Alice,18\n2,Bob,19\n3,Charlie,20")
     }
-    
+
+
+	static var allTests : [(String, (CSVTests) -> () throws -> ())] {
+		return [
+			("testInit_makesHeader", testInit_makesHeader),
+			("testDescription", testDescription)
+		]
+	}
+
+
+
     func testInit_makesHeader() {
         XCTAssertEqual(csv.header, ["id", "name", "age"])
     }

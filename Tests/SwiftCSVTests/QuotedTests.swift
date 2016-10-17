@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import SwiftCSV
+@testable import SwiftCSV
 
 class QuotedTests: XCTestCase {
     var csv: CSV!
@@ -20,6 +20,14 @@ class QuotedTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
+
+	static var allTests : [(String, (QuotedTests) -> () throws -> ())] {
+		return [
+			("testQuotedHeader", testQuotedHeader),
+			("testQuotedContent", testQuotedContent)
+		]
+	}
+
 
     func testQuotedHeader() {
         XCTAssertEqual(csv.header, ["id", "name, person", "age"])

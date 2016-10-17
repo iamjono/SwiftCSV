@@ -105,7 +105,7 @@ public class CSV {
 	}
 
     /// Turn the CSV data into NSData using a given encoding
-    public func dataUsingEncoding(encoding: String.Encoding) -> NSData? {
-        return description.data(using: encoding) as NSData?
+    public func dataUsingEncoding(encoding: String.Encoding) -> Data? {
+        return description.data(using: encoding) as Data?
     }
 }

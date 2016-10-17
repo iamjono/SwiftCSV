@@ -17,6 +17,13 @@ class PerformanceTest: XCTestCase {
 		csv = try! CSV(fileName: csvFile)
     }
 
+	static var allTests : [(String, (PerformanceTest) -> () throws -> ())] {
+		return [
+			("testParsePerformance", testParsePerformance)
+		]
+	}
+
+
     func testParsePerformance() {
         measure {
             let _ = self.csv.rows

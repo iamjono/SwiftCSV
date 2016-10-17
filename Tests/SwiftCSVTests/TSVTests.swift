@@ -16,7 +16,15 @@ class TSVTests: XCTestCase {
     override func setUp() {
         tsv = CSV(string: "id\tname\tage\n1\tAlice\t18\n2\tBob\t19\n3\tCharlie\t20", delimiter: "\t")
     }
-    
+
+	static var allTests : [(String, (TSVTests) -> () throws -> ())] {
+		return [
+			("testInit_makesHeader", testInit_makesHeader),
+			("testInit_makesRows", testInit_makesRows)
+		]
+	}
+
+
     func testInit_makesHeader() {
         XCTAssertEqual(tsv.header, ["id", "name", "age"])
     }

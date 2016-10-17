@@ -7,11 +7,21 @@
 //
 
 import XCTest
-import SwiftCSV
+@testable import SwiftCSV
 
 class URLTests: XCTestCase {
     var csv: CSV!
-    
+
+	static var allTests : [(String, (URLTests) -> () throws -> ())] {
+		return [
+			("testEmptyFieldsURL", testEmptyFieldsURL),
+			("testEmptyFieldsFile", testEmptyFieldsFile),
+			("testQuotes", testQuotes)
+		]
+	}
+
+
+
 	func testEmptyFieldsURL() {
 		let csvURL = "https://raw.githubusercontent.com/iamjono/SwiftCSV/master/Tests/SwiftCSVTests/empty_fields.csv"
 		csv = try! CSV(url: csvURL)

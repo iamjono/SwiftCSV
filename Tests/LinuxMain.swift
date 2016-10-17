@@ -1,5 +1,10 @@
 import XCTest
-import SwiftCSVSuite
-var tests = [XCTestCaseEntry]()
-tests += SwiftCSVSuite.allTests()
-XCTMain(tests)
+@testable import CSVTests
+@testable import PerformanceTest
+@testable import QuotedTests
+@testable import TSVTests
+@testable import URLTests
+
+XCTMain([
+	testCase(CSVTests.allTests),
+	])
