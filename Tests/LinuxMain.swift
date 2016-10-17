@@ -1,10 +1,10 @@
 import XCTest
-@testable import CSVTests
-@testable import PerformanceTest
-@testable import QuotedTests
-@testable import TSVTests
-@testable import URLTests
+@testable import SwiftCSVTests
 
 XCTMain([
 	testCase(CSVTests.allTests),
+	testCase(PerformanceTest.allTests),
+	testCase(QuotedTests.allTests),
+	testCase(TSVTests.allTests),
+	testCase(URLTests.allTests),
 	])
