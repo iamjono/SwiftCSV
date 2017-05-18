@@ -6,6 +6,11 @@
 .build/
 build/
 DerivedData/
+.build_lin/
+.packages_lin/
+
+*.xcodeproj
+*.xcodeproj/
 
 ## Various settings
 *.pbxuser
@@ -65,7 +70,7 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
-build_lin/
-packages_lin/
 Packages/
 docs/
+Package.pins
+PADockerfile_build
