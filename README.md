@@ -71,7 +71,7 @@ csv.enumerateAsDict { dict in
 * Add the following to your `Package.swift` file:
 
 ``` swift
-.Package(url: "https://github.com/iamjono/SwiftCSV.git", majorVersion: 3),
+.Package(url: "https://github.com/iamjono/SwiftCSV.git", majorVersion: 1),
 ```
 
 Then, regenerate your Xcode project:
