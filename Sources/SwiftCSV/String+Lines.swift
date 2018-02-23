@@ -8,10 +8,10 @@
 
 extension String {
     var firstLine: String {
-		let endIndex = lastLineSeparator(in: self.characters)
+		let endIndex = lastLineSeparator(in: self)
 		return self[startIndex..<endIndex]
     }
-	private func lastLineSeparator(in unis: String.CharacterView) -> String.CharacterView.Index {
+	private func lastLineSeparator(in unis: String) -> String.Index {
 		let startIndex = unis.startIndex
 		var endIndex = unis.endIndex
 		let seperators = [Character("\r\n"),Character("\n"),Character("\r")]
