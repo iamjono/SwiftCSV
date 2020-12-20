@@ -12,7 +12,7 @@ import PerfectCURL
 import cURL
 
 public class CSV {
-    static private let comma: Character = ","
+    static public let comma: Character = ","
     
     public var header: [String]!
     var _rows: [[String: String]]? = nil

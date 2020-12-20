@@ -1,10 +1,16 @@
-// Generated automatically by Perfect Assistant Application
-// Date: 2017-10-10 13:50:27 +0000
+// swift-tools-version:5.3
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 import PackageDescription
 let package = Package(
 	name: "SwiftCSV",
-	targets: [],
+	platforms: [
+		.macOS(.v10_15)
+	],
+	products: [.library(name: "SwiftCSV", targets: ["SwiftCSV"])],
 	dependencies: [
-		.Package(url: "https://github.com/PerfectlySoft/Perfect-CURL.git", majorVersion: 3),
+		.package(name: "PerfectCURL", url: "https://github.com/PerfectlySoft/Perfect-CURL.git", "5.0.0"..<"10.0.0"),
+	],
+	targets: [
+		.target(name: "SwiftCSV", dependencies: ["PerfectCURL"])
 	]
 )

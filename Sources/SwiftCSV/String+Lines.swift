@@ -9,7 +9,7 @@
 extension String {
     var firstLine: String {
 		let endIndex = lastLineSeparator(in: self)
-		return self[startIndex..<endIndex]
+		return String(self[startIndex..<endIndex])
     }
 	private func lastLineSeparator(in unis: String) -> String.Index {
 		let startIndex = unis.startIndex
